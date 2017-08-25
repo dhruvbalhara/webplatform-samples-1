@@ -358,6 +358,7 @@ function emailButton() {
 function startButton(event) {
   if (recognizing) {
     recognition.stop();
+    alert('stopped listening')
     return;
   }
   final_transcript = '';
