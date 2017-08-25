@@ -301,6 +301,7 @@ if (!('webkitSpeechRecognition' in window)) {
     if(recognizing) {
       recognizing = false;
       recognition.stop();
+      alert('stopped listening')
     }
   }
 
@@ -358,7 +359,6 @@ function emailButton() {
 function startButton(event) {
   if (recognizing) {
     recognition.stop();
-    alert('stopped listening')
     return;
   }
   final_transcript = '';
